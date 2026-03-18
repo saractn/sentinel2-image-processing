@@ -1,15 +1,5 @@
-import os
-import re
-import numpy as np
-import h5py
-import rasterio
-from rasterio.features import rasterize
-import rasterio.transform
-from datetime import datetime, timezone
-from shapely.geometry import box
-import geopandas as gpd
-
 '''
+# TAREFA 2
 This script reads 10-band GeoTIFF files from a specified folder, filters out files with no overlap
 with a vector mask, rasterizes the mask to identify valid pixels, and writes the sparse pixel time
 series to an HDF5 file. Only pixels inside the vector mask are stored.
@@ -33,6 +23,17 @@ overlap are kept — the boolean pixel mask determines which pixels are written 
 In append mode, timestamps already present in the HDF5 are skipped automatically. The spatial
 grid (xs, ys) is read from the existing file and new TIFs must cover the same pixel footprint.
 '''
+
+import os
+import re
+import numpy as np
+import h5py
+import rasterio
+from rasterio.features import rasterize
+import rasterio.transform
+from datetime import datetime, timezone
+from shapely.geometry import box
+import geopandas as gpd
 
 MODE = 'create'  # 'create' or 'append'
 
