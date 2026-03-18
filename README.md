@@ -29,7 +29,7 @@ Este repositório contém os scripts Python desenvolvidos para o pré-processame
 - Geração como output de um ficheiro **HDF5** que representa a série temporal dos dados GeoTIFF com extensão espacial correspondente ao input vetorial.  
 - Representação de valores **NODATA** como 65535.<br>
 
-**[Código Python Tarefa 2](https://github.com/saractn/sentinel2-image-processing/blob/main/ccd_to_raster.py)**
+**[Código Python Tarefa 2](https://github.com/saractn/sentinel2-image-processing/blob/main/tiffs_to_hdf5.py)**
 
 ### Tarefa 3 – Conversão para Parquet
 - Conversão de ficheiros em formato **Parquet**, em que cada linha representa um pixel e uma data, com atributos adicionais.  
