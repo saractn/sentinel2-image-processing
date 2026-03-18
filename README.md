@@ -20,15 +20,20 @@ Este repositório contém os scripts Python desenvolvidos para o pré-processame
 - Seleção de imagens da coleção Sentinel-2 SR (Surface Reflectance) para um determinado intervalo de datas.  
 - Utilização do produto **S2_CLOUD_PROBABILITY (s2cloudless)** para mascarar áreas afetadas por nuvens e sombras.  
 - Transferência das imagens em formato **GeoTIFF**.  
-- Garantia de que os valores válidos de refletância são inteiros entre 0 e 10000, sendo os valores **NODATA** convertidos para 65535.
+- Garantia de que os valores válidos de refletância são inteiros entre 0 e 10000, sendo os valores **NODATA** convertidos para 65535.<br>
+
+**[Código Python Tarefa 1](https://github.com/saractn/sentinel2-image-processing/blob/main/gee_download_S2_tile_36_parts.py)**
 
 ### Tarefa 2 – Conversão para HDF5
 - Utilização como inputs de ficheiros GeoTIFF correspondentes a uma tile e a uma data de aquisição, bem como de um ficheiro vetorial de delimitação de Portugal Continental.  
 - Geração como output de um ficheiro **HDF5** que representa a série temporal dos dados GeoTIFF com extensão espacial correspondente ao input vetorial.  
-- Representação de valores **NODATA** como 65535.
+- Representação de valores **NODATA** como 65535.<br>
+
+**[Código Python Tarefa 2](https://github.com/saractn/sentinel2-image-processing/blob/main/ccd_to_raster.py)**
 
 ### Tarefa 3 – Conversão para Parquet
 - Conversão de ficheiros em formato **Parquet**, em que cada linha representa um pixel e uma data, com atributos adicionais.  
-- Garantia de que os pixels não representados nos ficheiros Parquet incluem as respetivas coordenadas e valores NODATA para os restantes atributos.  
+- Garantia de que os pixels não representados nos ficheiros Parquet incluem as respetivas coordenadas e valores NODATA para os restantes atributos.<br>
 
----
+**[Código Python Tarefa 3](https://github.com/saractn/sentinel2-image-processing/blob/main/ccd_to_raster.py)**
+
