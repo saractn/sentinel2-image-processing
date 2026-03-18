@@ -1,5 +1,6 @@
 '''
 # TAREFA 2
+
 This script reads 10-band GeoTIFF files from a specified folder, filters out files with no overlap
 with a vector mask, rasterizes the mask to identify valid pixels, and writes the sparse pixel time
 series to an HDF5 file. Only pixels inside the vector mask are stored.
