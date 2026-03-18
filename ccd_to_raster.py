@@ -1,5 +1,5 @@
 """
-Aletred MC feb 2026: Revised version of ccd_to_raster.py to allow passing end and start band values to output 
+# TAREFA 3
 
 PURPOSE:
 This script processes parquet files containing change detection results from satellite imagery analysis.
