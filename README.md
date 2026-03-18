@@ -8,13 +8,13 @@ Ajuste direto ao abrigo do Art.º 20.º, n.º 1, alínea d) do Código dos Contr
 
 ---
 
-## Descrição do Projeto
+## Descrição do projeto
 
 Este repositório contém os scripts Python desenvolvidos para o pré-processamento, organização e conversão de dados geoespaciais provenientes de imagens Sentinel-2, com vista à deteção de alterações no território. Os serviços prestados visam garantir a interoperabilidade dos dados e o processamento eficiente de grandes volumes de informação, suportando a criação de bases de dados territoriais e análises espaciais.
 
 ---
 
-## Serviços Prestados
+## Serviços prestados
 
 ### Tarefa 1 – Pré-processamento e descarregamento de imagens
 - Seleção de imagens da coleção Sentinel-2 SR (Surface Reflectance) para um determinado intervalo de datas.  
