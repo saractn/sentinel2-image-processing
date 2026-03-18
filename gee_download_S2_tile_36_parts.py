@@ -1,4 +1,6 @@
 """
+# TAREFA 1
+
 This script performs the download, processing, cloud/shadow masking, and mosaic creation of Sentinel-2 (S2) images More actions
 for a specific tile using the Google Earth Engine (GEE) API.
 
